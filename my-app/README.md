@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyApp - Blue M&A Email Composer
 
-## Getting Started
+## Overview
+A Next.js web application that allows users to compose emails using a blue-themed UI with the company branding "M & A". Users can pick stored HTML assets from Supabase storage, insert them into the email body, save the final HTML, and send via Resend.
 
-First, run the development server:
+## Environment Details
+- **Date/Time**: 2026-06-16 13:43:12 UTC
+- **Workspace**: /workspace/1bc0206b-f227-4f32-8ef5-2debe97f47f2/sessions/agent_05757c6e-fe61-4531-b66a-c9d3a60d4f47
+- **Project**: Next.js app located at /my-app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Blue theme consistent with M&A branding
+- Email composition screen with asset picker from Supabase storage
+- HTML editor using `` tags for assets
+- Save final HTML to Supabase storage
+- Send emails via Resend API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup
+1. Install dependencies: `bun install`
+2. Create `.env` file with:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+   RESEND_API_KEY=your_resend_key
+   ```
+3. Run development server: `bun dev`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
+- Navigate to `/email/compose` to start composing an email.
+- Choose assets from Supabase storage, insert into the body.
+- Click "Send" to save and dispatch the email.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+- **Frontend**: Next.js 14, React 19, Tailwind CSS
+- **Backend**: Supabase (storage, auth), Resend (email sending)
+- **Language**: TypeScript
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+For questions, reach out to the development team via the M&A support channel.
